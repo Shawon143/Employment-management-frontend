@@ -1,0 +1,76 @@
+/* updateDeleteEmployee.css */
+.update-delete-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form-section,
+.advance-section {
+  width: 48%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.form-section h2,
+.advance-section h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.employee-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.employee-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.update-button,
+.delete-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-button {
+  background-color: #007bff;
+}
+
+.update-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545 !important; /* Use !important to ensure it overrides other styles */
+}
+
+.delete-button:hover {
+  background-color: #c82333 !important; /* Use !important to ensure it overrides other styles */
+}

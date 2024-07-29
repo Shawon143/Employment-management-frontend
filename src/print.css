@@ -1,0 +1,37 @@
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #printTable,
+  #printTable * {
+    visibility: visible;
+  }
+
+  #printTable {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  button {
+    display: none;
+  }
+}
+a {
+  text-decoration: none;
+  color: #007bff; /* Blue color for links */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.month-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px;
+  border-bottom: 2px solid #000;
+}

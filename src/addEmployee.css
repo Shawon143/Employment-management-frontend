@@ -1,0 +1,67 @@
+/* addEmployee.css */
+.add-employee-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.add-employee-container h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.add-employee-container label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #555;
+}
+
+.add-employee-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.add-employee-container input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.add-employee-container input[type="number"]::-webkit-inner-spin-button,
+.add-employee-container input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.add-employee-container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.add-employee-container button:hover {
+  background-color: #0056b3;
+}
+
+.add-employee-container button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}

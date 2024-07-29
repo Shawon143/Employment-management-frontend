@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import EmployeeDetails from "./EmployeeDetails";
+import Attendance from "./Attendance";
+import AddEmployee from "./AddEmployee";
+import UpdateDeleteEmployee from "./UpdateDeleteEmployee";
+import { Container, Nav } from "./Styles"; // Import styled components
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Container>
+        <h1>Employee Management</h1>
+        <Nav>
+          <ul>
+            <li>
+              <Link to="/">Attendance</Link>
+            </li>
+            <li>
+              <Link to="/details">Employee Details</Link>
+            </li>
+            <li>
+              <Link to="/add-employee">Add Employee</Link>
+            </li>
+          </ul>
+        </Nav>
+
+        <Routes>
+          <Route path="/" element={<Attendance />} />
+          <Route path="/details" element={<EmployeeDetails />} />
+          <Route path="/add-employee" element={<AddEmployee />} />
+          <Route
+            path="/update-employee/:id"
+            element={<UpdateDeleteEmployee />}
+          />
+        </Routes>
+      </Container>
+    </Router>
   );
-}
+};
 
 export default App;
